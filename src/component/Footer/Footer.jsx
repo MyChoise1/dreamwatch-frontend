@@ -1,15 +1,27 @@
+import { useContext } from 'react';
 import './Footer.css';
+import DisplayContext from '../State/Context';
 
 export default function Footer() {
+    const display = useContext(DisplayContext)
+
+    function backgroungLight() {
+        display.colorLight()
+    }
+
+    function backgroundDark() {
+        display.colorDark()
+    }
+
     return (
         <footer className="footer">
             <div className="footer-section">
                 <p>Site Theme</p>
                 <div className="theme-options">
-                    <button>A</button>
-                    <button className="active">A</button>
-                    <button>A</button>
-                    <button>A</button>
+                    <button className='bg-slate-200 rounded' 
+                    onClick={backgroungLight}>A</button>
+                    <button className='bg-slate-800 rounded'
+                    onClick={backgroundDark}>A</button>
                 </div>
             </div>
             <div className="footer-section">

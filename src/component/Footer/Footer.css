@@ -1,14 +1,17 @@
 
 
 .footer {
-    margin-top: 100vh;
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
     padding-right: 15%;
-    background-color: #111;
-    color: #ccc;
+    background-color: #0f1623;
+    color: #c8c8c8;
     font-size: 18px;
+}
+
+.slate{ 
+    background-color: #0f1623;
 }
 
 .footer-section {
@@ -32,14 +35,17 @@
 }
 
 .theme-options button {
-    background-color: #333;
-    color: #ccc;
-    border: none;
+    /* background-color: #333; */
+    color: #5c5c5c;
+    border: 2px solid #5d5d5d;
     padding: 5px;
     cursor: pointer;
+    height: 30px;
+    width: 30px;
+    
 }
 
-.theme-options button.active {
+/* .theme-options button.active {
     background-color: #555;
     color: #fff;
-}
+} */

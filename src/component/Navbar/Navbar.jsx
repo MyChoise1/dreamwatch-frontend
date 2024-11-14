@@ -1,8 +1,17 @@
+import { useContext } from 'react';
 import './Navbar.css';
-import DMLogo from '../../../public/Logo.png'
+import DMLogo from '/Logo.png'
+import DisplayContext from '../State/Context';
 
 export default function Navbar() {
-    console.log('NavBar')
+    const display = useContext(DisplayContext)
+    function loginPage() {
+        display.showLogin()
+    }
+    function signupPage() {
+        display.showSignup()
+    }
+
     return (
         <div className="navbar">
             <div className="logo">
@@ -12,8 +21,8 @@ export default function Navbar() {
             <a href="#social">Social</a>
             <a href="#forum">Forum</a>
             <div className="auth-buttons">
-                <button onClick={() => window.location.href = '#login'}>Login</button>
-                <button onClick={() => window.location.href = '#signup'} className="signup-button">Sign Up</button>
+                <button onClick={loginPage}>Login</button>
+                <button onClick={signupPage} className="signup-button">Sign Up</button>
             </div>
         </div>
     );

@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #101221; /* Dark blue background */
-    padding: 20px 10%;
+    background-color: #171e50; /* Dark blue background */
+    padding: 15px 10%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
